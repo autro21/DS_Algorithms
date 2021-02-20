@@ -66,13 +66,7 @@ void insert_value(int v, node* root)
 			insert_value(v, root->left);
 	}
 }
-void inOrder(node* root){
-	if(root == nullptr)
-		return;
-	inOrder(root->left);
-	cout << (root->val) << " ";
-	inOrder(root->right);
-}
+
 void inOrder(node* root){
 	if(root == nullptr)
 		return;
