@@ -97,9 +97,9 @@ void postOrder(node* root){
 	if(root == nullptr)
 		return;
 
-	//root left right
-	preOrder(root->left);
-	preOrder(root->right);
+	//left right root
+	postOrder(root->left);
+	postOrder(root->right);
 	cout << (root->val) << " ";
 }
 
